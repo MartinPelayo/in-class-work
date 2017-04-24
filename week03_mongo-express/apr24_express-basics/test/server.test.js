@@ -16,4 +16,17 @@ describe('GET /', () => {
       .then(res => res.text)
       .then(text => assert.equal(text, 'hello world'));
   });
+
+  it('says foo', () => {
+    return request 
+    .get('/foo')
+    .then(res => res.text)
+    .then(text => assert.equal(text, 'foo'));
+
+
+  });
+
+
+
+
 });
